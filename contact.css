@@ -1,0 +1,364 @@
+body{
+    background-color:#cf9fff;
+    background-image: linear-gradient(
+                                    rgba(165, 55, 253, 0.80),
+                                    rgba(165, 55, 253, 0.80)), url("Cat5.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    height: 700px;
+    margin: 0;
+    font-family: arial;
+    
+}
+*{
+box-sizing: border-box
+}
+.nav ul li{
+    display: inline-block;
+    margin-bottom: -20px; 
+    font-size: 20px ;
+    transition: transform .2s;
+}
+
+
+ li a{
+    color:white;
+    text-decoration: none; 
+     transition: transform .2s;
+}
+.nav{
+    margin-left: 50px;
+    float:left;
+    margin-top: -10px;
+    transition: transform .2s;
+    position: absolute;
+}
+.nav ul li a{
+    padding: 50px;
+    transition: transform .2s;
+}
+li, a{
+    transition: transform .2s;
+    text-shadow: 2px 2px black;
+}
+a:hover{
+    color: gold;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+li:hover{
+    color: gold;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+
+.logo{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 120px;
+    align-items: left;
+    animation: zoom-in-zoom-out 2s infinite;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+@keyframes zoom-in-zoom-out{
+      0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+h1{
+    color: white;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    top: 200px;
+    left: 720px;
+    font-family: monospace;
+    position: absolute;
+    font-size: 80px;
+    
+}
+
+}
+.column{
+    float: left;
+    width: 15%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: -20px;
+    margin-top: 80px;
+}
+.column img{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.column img:hover{
+    opacity: 1;
+     transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    position: relative;
+    display: none:
+}
+#expandedImg{
+     width: 400px;
+    height: 400px;
+    margin-left: 500px;
+}
+#imgtext{
+    position: absolute;
+    bottom: 20px;
+    left: 520px;
+    text-shadow: 3px 3px black;
+    color: white;
+    font-size: 30px;
+}
+#imgtext:hover{
+    color: gold;
+}
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 470px;
+    text-shadow: 3px 3px black;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+.closebtn:hover{
+     transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+.cat{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+.text{
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 500px;
+    color: white;
+}
+.pnh{
+    margin-left: 600px;
+    padding-top: 200px;
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    body{
+    background-color:#cf9fff;
+    background-image: linear-gradient(
+                                    rgba(165, 55, 253, 0.80),
+                                    rgba(165, 55, 253, 0.80)), url("Cat5.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-position: right bottom, left top;
+    height: 700px;
+    margin: 0;
+    font-family: arial;
+    
+}
+*{
+box-sizing: border-box
+}
+.nav ul li{
+    display: inline-block;
+    margin-bottom: -20px; 
+    font-size: 12px ;
+    transition: transform .2s;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+ li a{
+    color:white;
+    text-decoration: none; 
+     transition: transform .2s;
+    
+}
+.nav{
+    margin-left:-5px;
+    margin-right: 0px;
+    float:left;
+    margin-top: 5px;
+    transition: transform .2s;
+    position: absolute;
+    padding-left: -5px;
+}
+.nav ul li a{
+    padding: 2px;
+    transition: transform .2s;
+}
+li, a{
+     
+    transition: transform .2s;
+    text-shadow: 2px 2px black;
+}
+a:hover{
+    color: gold;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+li:hover{
+    color: gold;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.logo{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 0px;
+    align-items: left;
+    animation: zoom-in-zoom-out 2s infinite;
+    width: 200px;
+    height: 200px;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+@keyframes zoom-in-zoom-out{
+      0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+h1{
+    color: white;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    top: 200px;
+    left: 720px;
+    font-family: monospace;
+    position: absolute;
+    font-size: 80px;
+    
+}
+
+
+.column{
+    float: left;
+    width: 15%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: -20px;
+    margin-top: 80px;
+}
+.column img{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.column img:hover{
+    opacity: 1;
+     transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    position: relative;
+    display: none:
+}
+#expandedImg{
+     width: 400px;
+    height: 400px;
+    margin-left: 500px;
+}
+#imgtext{
+    position: absolute;
+    bottom: 20px;
+    left: 520px;
+    text-shadow: 3px 3px black;
+    color: white;
+    font-size: 30px;
+}
+#imgtext:hover{
+    color: gold;
+}
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 470px;
+    text-shadow: 3px 3px black;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+.closebtn:hover{
+     transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+.cat{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+.text{
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 500px;
+    color: white;
+}
+.pnh{
+    margin-left: 200px;
+    padding-top: 180px;
+    color: white;
+    font-size: 12px;
+}
+}

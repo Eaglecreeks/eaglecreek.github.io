@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Mainecoon cats</title>
+    <link rel = "stylesheet"  type="text/css" href ="Cats.css">
+    
+</head>
+
+    <body>
+       
+        
+        <div class="nav">
+        
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="cats.html">Mainecoon Cats</a></li>
+                 <li><a href="devon.html">Devon rex Cats</a></li>
+                <li><a href="dogs.html">Frenchies </a></li> 
+                <li><a href="contact.html">Contact Us </a></li> 
+            </ul>
+        </div>
+    
+    <div class="text">
+            <h3>Click to see Mainecoon cats available:</h3>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+            <img class="cat" src="Cat3.jpg" alt="Jack the sire"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img class="cat" src="Cat6.jpg" alt="Zara"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img class="cat" src="Cat4.jpg" alt="Angel"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img class="cat" src="Cat7.jpg" alt="Phoebe"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img class="cat" src="Cat5.jpg" alt="Blue"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img class="cat" src="Cat8.jpg" alt="Iggy" onclick="myFunction(this);">
+            </div>
+        </div>
+        
+        <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" src="Cat3.jpg" >
+            <div id="imgtext"></div>
+        </div>
+
+       
+        <script>
+         function myFunction(imgs){
+             var expandImg= document.getElementById("expandedImg");
+             var imgText= document.getElementById("imgtext");
+             expandImg.src = imgs.src;
+             imgText.innerHTML = imgs.alt;
+             expandImg.parentElement.style.display="block";
+         }
+        </script>
+    </body>
+
+</html>
